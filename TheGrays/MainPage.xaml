@@ -1,11 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="TheGrays.MainPage"
              BackgroundColor="Black">
 
     <Grid>
         
+        <toolkit:MediaElement x:Name="mediaElement"
+                              ShouldAutoPlay="False"
+                              ShouldShowPlaybackControls="False"
+                              Source="embed://the_gray_tom_slick.mp4"
+        />
+
         <Image Grid.Row="0"
             Source="the_grays_names.jpg"
             HorizontalOptions="Fill"
